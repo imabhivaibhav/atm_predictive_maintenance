@@ -1,14 +1,10 @@
-Converting the full detailed report with text and images into a comprehensive README format is quite extensive. For clarity and usability, here is a complete README that fully captures the contents of your report, including the key images described. The image references are placeholders based on the report’s image labels and positions; you should replace these with actual image file paths in your project repository.
-
-***
-
 # ATM Predictive Maintenance Using Random Forest and XGBoost
 
 ## Project Title
 Predictive Maintenance of ATM Utilizing Multi-Label and Binary Fault Classification Through Random Forest and XGBoost
 
 ## Author
-Abhijeet Vaibhav (21D070004)
+Abhijeet Vaibhav
 
 ***
 
