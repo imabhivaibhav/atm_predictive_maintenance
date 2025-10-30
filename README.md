@@ -57,6 +57,9 @@ The dataset contains diverse fault events, with counts ranging from hundreds to 
 
 ![Fault Type Frequency](
 
+![Alt text](download.png)
+
+
   
 Fig 1: Distribution of ATM fault types.
 
@@ -66,6 +69,8 @@ Fig 1: Distribution of ATM fault types.
 Fig 2: Merged fault categories.
 
 ### Site Category Fault Counts
+
+
 
 | Original Site Category              | Count   | Merged Site Category        | Count   |
 |-----------------------------------|---------|-----------------------------|---------|
