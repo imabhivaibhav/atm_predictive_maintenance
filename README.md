@@ -57,6 +57,7 @@ Unscheduled ATM downtime due to faults causes customer inconvenience and financi
 
 
 ![ATM avg monthly count.jpg](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/ATM_avg_monthly_count.jpg)
+
 Fig 1: Count of ATM and there Monthly avg faults.
 
 ![Monthly fault count.jpg](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/Monthly_Fault_count.jpg)
