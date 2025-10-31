@@ -51,6 +51,7 @@ Unscheduled ATM downtime due to faults causes customer inconvenience and financi
 
 -Suspected Skimming Attack
 
+******
 
 
 ### Site Category Fault Counts
