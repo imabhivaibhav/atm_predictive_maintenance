@@ -186,5 +186,4 @@ Fig 3: Sliding Window Diagram.
 - Future focus includes improving rare fault detection via synthetic data, deep learning architectures (LSTM, Transformers), and ensembles.
 - Integration of multimodal data and continuous learning from operational feedback will strengthen performance.
 
-***
 
