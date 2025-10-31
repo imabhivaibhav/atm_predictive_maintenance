@@ -41,9 +41,6 @@ Unscheduled ATM downtime due to faults causes customer inconvenience and financi
 -Suspected Skimming Attack
 
 
-  
-Fig 2: Merged fault categories.
-
 ### Site Category Fault Counts
 
 
@@ -57,7 +54,7 @@ Fig 2: Merged fault categories.
 | ...                             | ...     | ...                        | ...     |
 
 
-![ATM avg monthly count.jpg]((https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/ATM_avg_monthly_count.jpg))
+![ATM avg monthly count.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/ATM_avg_monthly_count.jpg)
 
 Fig 1: Count of ATM and there Monthly avg faults.
 
