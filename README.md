@@ -57,13 +57,13 @@ Fig 2: Merged fault categories.
 | ...                             | ...     | ...                        | ...     |
 
 
-![ATM avg monthly count.jpg](ATM avg monthly count.jpg)
+![ATM avg monthly count.jpg](ATM_avg_monthly_count.jpg)
 
 Fig 1: Count of ATM and there Monthly avg faults.
 
-![Monthly fault count.jpg](Monthly fault count.jpg)
+![Monthly fault count.jpg](Monthly_Fault_count.jpg)
 
-Fig 1: Monthly fault count.
+Fig 2: Monthly fault count.
 
 Faults with maintenance not done include:
 - Cashout Fault
@@ -124,7 +124,9 @@ Faults with maintenance not done include:
 - Windows slide 7 days forward iteratively.
 - Enables temporal adaptation and fault trend analysis.
 
-![Sliding Window diagram](Sliding Window diagram.jpg)
+![Sliding Window diagram.jpg](Sliding_window_diagram.jpg)
+
+Fig 3: Sliding Window Diagram.
 
 ***
 
@@ -144,15 +146,15 @@ Faults with maintenance not done include:
 
 ##### Precision (Throughout Prediction windows)
 
-![Alt text](download.png)
+![Precision](Precision.jpg)
 
 ##### Recall (Throughout Prediction windows)
 
-![Alt text](download.png)
+![Recall](Recall.jpg)
 
 ##### F1-Score (Throughout Prediction windows)
 
-![Alt text](download.png)
+![F1-Score](F1-score.jpg)
 
 
 
