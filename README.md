@@ -28,17 +28,29 @@ Unscheduled ATM downtime due to faults causes customer inconvenience and financi
 ### Unique Fault Types after combining similar fualts
 
 -Card Reader Failure
+
 -Cash Handler Fault
+
 -Cashout Fault
+
 -Cassette Fault
+
 -Close
+
 -Communication Failure
+
 -Depository Fault
+
 -Encryptor Fault
+
 -Power Failure
+
 -Receipt Printer Fault
+
 -Supervisor Switch On
+
 -Suspected Skimming Attack
+
 
 
 ### Site Category Fault Counts
