@@ -114,7 +114,7 @@ Faults with maintenance not done include:
 - Similar features but binary target of fault/no-fault.
 
 
-| **Features**                | **Target*       |
+| **Features**                | **Target**       |
 |-----------------------------|-----------------|
 | ATM ID                      | Fault           |
 | atm_type                    |                 |
