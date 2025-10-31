@@ -25,45 +25,21 @@ Unscheduled ATM downtime due to faults causes customer inconvenience and financi
 - **Encoding:** Ordinal encoding for categorical features.
 - **Temporal Split:** May-September 2021 used for training; September-October 2021 for testing.
 
-### Unique Fault Types and Counts
-The dataset contains diverse fault events, with counts ranging from hundreds to hundreds of thousands, including:
-- Communication failures
-- Cassette faults
-- Card reader failures
-- Power issues
-- Suspected skimming
+### Unique Fault Types after combining similar fualts
 
-(Refer to "Unique Fault Type and its count" table from the report for full details.)
+-Card Reader Failure
+-Cash Handler Fault
+-Cashout Fault
+-Cassette Fault
+-Close
+-Communication Failure
+-Depository Fault
+-Encryptor Fault
+-Power Failure
+-Receipt Printer Fault
+-Supervisor Switch On
+-Suspected Skimming Attack
 
-### Fault Categories Summary
-| Fault Category           |
-|-------------------------|
-| Card Reader Failure     |
-| Cash Handler Fault      |
-| Cashout Fault           |
-| Cassette Fault          |
-| Close                   |
-| Communication Failure   |
-| Depository Fault        |
-| Encryptor Fault         |
-| Power Failure           |
-| Receipt Printer Fault   |
-| Supervisor Switch On    |
-| Suspected Skimming Attack|
-
-***
-
-## Exploratory Visuals
-
-![Fault Type Frequency](
-
-![Alt text](download.png)
-
-
-  
-Fig 1: Distribution of ATM fault types.
-
-![Fault Categories Merged](
 
   
 Fig 2: Merged fault categories.
@@ -80,15 +56,14 @@ Fig 2: Merged fault categories.
 | Lobby ATM                       | 14,535  | Lobby ATM                | 14,535  |
 | ...                             | ...     | ...                        | ...     |
 
-![Site Category Faults](
 
-  
-Fig 3: ATM faults by site category.
+![ATM avg monthly count.jpg](ATM avg monthly count.jpg)
 
-![Monthly Fault Count](
+Fig 1: Count of ATM and there Monthly avg faults.
 
-  
-Fig 4: Monthly count of ATM faults.
+![Monthly fault count.jpg](Monthly fault count.jpg)
+
+Fig 1: Monthly fault count.
 
 Faults with maintenance not done include:
 - Cashout Fault
@@ -100,6 +75,22 @@ Faults with maintenance not done include:
 ## Methodology
 
 ### 1. Multi-Label Classification
+
+| **Features**               | **Target**                      |
+|-----------------------------|----------------------------------|
+| ATM ID                      | Card Reader Failure             |
+| atm_type                    | Cash Handler Fault              |
+| Machine type                | Cashout Fault                   |
+| Site type                   | Cassette Fault                  |
+| Region                      | Close                           |
+| Zone                        | Communication Failure           |
+| Site Category               | Depository Fault                |
+| ATM_Hits                    | Encryptor Fault                 |
+| rolling_hits_7d              | Power Failure                   |
+| Duration                    | Receipt Printer Fault           |
+| Maintenance in last 7d      | Supervisor Switch On            |
+| Maintenance Duration        | Suspected Skimming Attack       |
+
 - Uses multi-output classifiers (Random Forest and XGBoost).
 - Predicts multiple concurrent fault types per ATM.
 - Features include ATM ID, model, type, region, transaction counts, and maintenance history.
@@ -110,6 +101,22 @@ Faults with maintenance not done include:
 - Uses aggregated fault labels or direct binary classifier.
 - Similar features but binary target of fault/no-fault.
 
+
+| **Features**                | **Target*       |
+|-----------------------------|-----------------|
+| ATM ID                      | Fault           |
+| atm_type                    |                 |
+| Machine type                |                 |
+| Site type                   |                 |
+| Region                      |                 |
+| Zone                        |                 |
+| Site Category               |                 |
+| ATM_Hits                    |                 |
+| rolling_hits_7d             |                 |
+| Duration                    |                 |
+
+
+
 ### Sliding Window Fault Prediction
 - Observation window: 14 days of historical data.
 - Buffer window: 7-day gap to prevent data leakage.
@@ -117,69 +124,37 @@ Faults with maintenance not done include:
 - Windows slide 7 days forward iteratively.
 - Enables temporal adaptation and fault trend analysis.
 
+![Sliding Window diagram](Sliding Window diagram.jpg)
+
 ***
 
 ## Results
 
-### Random Forest Multi-Label Classification Metrics
+### Random Forest Result
 
-| Fault Type                 | Precision | Recall | F1-Score | Support |
-|---------------------------|-----------|--------|----------|---------|
-| Card Reader Failure       | 0.84      | 0.90   | 0.87     | 44,607  |
-| Cash Handler Fault        | 0.70      | 0.40   | 0.51     | 10,348  |
-| Cassette Fault            | 0.88      | 0.90   | 0.89     | 50,159  |
-| ...                       | ...       | ...    | ...      | ...     |
+![Binary CLassification](Randf_binary.png)
+![Multilabel Classification](Randf_multilabel.png)
 
-Binary classification achieves high precision and recall (>0.93 F1-Score).
+### XGBoost Result
 
-![Confusion Matrix Random Forest](
+![Binary CLassification](XG_binary.png)
+![Multilabel Classification](XG_multilabel.png)
 
-  
-Fig 5: Multi-label confusion matrix (Random Forest).
+#### XGBoost Sliding Windows
 
-![Binary Confusion Random Forest](
+##### Precision (Throughout Prediction windows)
 
-  
-Fig 6: Binary classification confusion matrix (Random Forest).
+![Alt text](download.png)
 
-***
+##### Recall (Throughout Prediction windows)
 
-### XGBoost Multi-Label Classification Metrics
+![Alt text](download.png)
 
-| Fault Type                 | Precision | Recall | F1-Score | Support |
-|---------------------------|-----------|--------|----------|---------|
-| Card Reader Failure       | 0.84      | 0.91   | 0.88     | 44,607  |
-| Cash Handler Fault        | 0.71      | 0.38   | 0.49     | 10,348  |
-| Cassette Fault            | 0.88      | 0.89   | 0.89     | 50,159  |
-| ...                       | ...       | ...    | ...      | ...     |
+##### F1-Score (Throughout Prediction windows)
 
-Binary fault detection with near-perfect precision and recall.
+![Alt text](download.png)
 
-![Confusion Matrix XGBoost](
 
-  
-Fig 7: Multi-label confusion matrix (XGBoost).
-
-![Binary Confusion XGBoost](
-
-  
-Fig 8: Binary classification confusion matrix (XGBoost).
-
-***
-
-### Sliding Window Prediction Example (Window 1)
-
-| Fault Type            | Precision | Recall | F1-Score | Accuracy |
-|----------------------|-----------|--------|----------|----------|
-| Card Reader Failure  | 0.837     | 0.931  | 0.881    | 0.894    |
-| Cash Handler Fault   | 0.578     | 0.478  | 0.523    | 0.925    |
-| Cashout Fault        | 0.762     | 0.548  | 0.638    | 0.938    |
-| Cassette Fault       | 0.860     | 0.898  | 0.879    | 0.888    |
-| ...                  | ...       | ...    | ...      | ...      |
-
-(Similar tables available for other sliding windows.)
-
-***
 
 ## Discussion
 
@@ -199,6 +174,3 @@ Fig 8: Binary classification confusion matrix (XGBoost).
 
 ***
 
-If you want the full detailed text along with the extracted images from the report for direct inclusion in a README.md file or similar, please specify, and this can be generated next.
-
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/87713493/1feeb56c-144e-4238-b166-ff879a42be0b/Report-DDP-I-ATM-Predictive-Maintenance.docx)
