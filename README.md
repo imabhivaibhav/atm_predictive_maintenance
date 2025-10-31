@@ -57,11 +57,11 @@ Fig 2: Merged fault categories.
 | ...                             | ...     | ...                        | ...     |
 
 
-![ATM avg monthly count.jpg](ATM_avg_monthly_count.jpg)
+![ATM avg monthly count.jpg]([ATM_avg_monthly_count.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/ATM_avg_monthly_count.jpg))
 
 Fig 1: Count of ATM and there Monthly avg faults.
 
-![Monthly fault count.jpg](Monthly_Fault_count.jpg)
+![Monthly fault count.jpg]([Monthly_Fault_count.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Monthly_Fault_count.jpg))
 
 Fig 2: Monthly fault count.
 
@@ -124,7 +124,7 @@ Faults with maintenance not done include:
 - Windows slide 7 days forward iteratively.
 - Enables temporal adaptation and fault trend analysis.
 
-![Sliding Window diagram.jpg](Sliding_window_diagram.jpg)
+![Sliding Window diagram.jpg]([Sliding_window_diagram.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Sliding_window_diagram.jpg))
 
 Fig 3: Sliding Window Diagram.
 
@@ -134,27 +134,27 @@ Fig 3: Sliding Window Diagram.
 
 ### Random Forest Result
 
-![Binary CLassification](Randf_binary.png)
-![Multilabel Classification](Randf_multilabel.png)
+![Binary CLassification]([Randf_binary.png](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Randf_binary.png))
+![Multilabel Classification]([Randf_multilabel.png](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Randf_multilabel.png))
 
 ### XGBoost Result
 
-![Binary CLassification](XG_binary.png)
-![Multilabel Classification](XG_multilabel.png)
+![Binary CLassification]([XG_binary.png](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/XG_binary.png))
+![Multilabel Classification]([XG_multilabel.png](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/XG_multilabel.png))
 
 #### XGBoost Sliding Windows
 
 ##### Precision (Throughout Prediction windows)
 
-![Precision](Precision.jpg)
+![Precision]([Precision.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Precision.jpg))
 
 ##### Recall (Throughout Prediction windows)
 
-![Recall](Recall.jpg)
+![Recall]([Recall.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Recall.jpg))
 
 ##### F1-Score (Throughout Prediction windows)
 
-![F1-Score](F1-score.jpg)
+![F1-Score]([F1-score.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/F1-score.jpg))
 
 
 
