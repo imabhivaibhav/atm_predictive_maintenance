@@ -54,11 +54,10 @@ Unscheduled ATM downtime due to faults causes customer inconvenience and financi
 | ...                             | ...     | ...                        | ...     |
 
 
-![ATM avg monthly count.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/ATM_avg_monthly_count.jpg)
-
+![ATM avg monthly count.jpg](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/ATM_avg_monthly_count.jpg)
 Fig 1: Count of ATM and there Monthly avg faults.
 
-![Monthly fault count.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Monthly_Fault_count.jpg)
+![Monthly fault count.jpg](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/Monthly_Fault_count.jpg)
 
 Fig 2: Monthly fault count.
 
@@ -121,7 +120,7 @@ Faults with maintenance not done include:
 - Windows slide 7 days forward iteratively.
 - Enables temporal adaptation and fault trend analysis.
 
-![Sliding Window diagram.jpg](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Sliding_window_diagram.jpg)
+![Sliding Window diagram.jpg](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/Sliding_window_diagram.jpg)
 
 Fig 3: Sliding Window Diagram.
 
@@ -131,27 +130,27 @@ Fig 3: Sliding Window Diagram.
 
 ### Random Forest Result
 
-![Binary CLassification](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Randf_binary.png)
-![Multilabel Classification](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Randf_multilabel.png)
+![Binary CLassification](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/Randf_binary.png)
+![Multilabel Classification](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/Randf_multilabel.png)
 
 ### XGBoost Result
 
-![Binary CLassification](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/XG_binary.png)
-![Multilabel Classification](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/XG_multilabel.png)
+![Binary CLassification](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/XG_binary.png)
+![Multilabel Classification](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/XG_multilabel.png)
 
 #### XGBoost Sliding Windows
 
 ##### Precision (Throughout Prediction windows)
 
-![Precision](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Precision.jpg)
+![Precision](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/Precision.jpg)
 
 ##### Recall (Throughout Prediction windows)
 
-![Recall](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/Recall.jpg)
+![Recall](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/Recall.jpg)
 
 ##### F1-Score (Throughout Prediction windows)
 
-![F1-Score](https://github.com/imabhivaibhav/atm_predictive_maintenance/blob/64496c01bd64f138336707c1eb6aeb86eacad85f/F1-score.jpg)
+![F1-Score](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/F1-score.jpg)
 
 
 
