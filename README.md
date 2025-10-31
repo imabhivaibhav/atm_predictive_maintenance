@@ -53,6 +53,8 @@ Unscheduled ATM downtime due to faults causes customer inconvenience and financi
 | Lobby ATM                       | 14,535  | Lobby ATM                | 14,535  |
 | ...                             | ...     | ...                        | ...     |
 
+******
+
 
 ![ATM avg monthly count.jpg](https://raw.githubusercontent.com/imabhivaibhav/atm_predictive_maintenance/64496c01bd64f138336707c1eb6aeb86eacad85f/ATM_avg_monthly_count.jpg)
 Fig 1: Count of ATM and there Monthly avg faults.
